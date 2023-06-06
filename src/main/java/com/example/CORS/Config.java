@@ -28,7 +28,7 @@ public class Config implements WebMvcConfigurer {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(authorize->authorize
+                .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/**")
                         .permitAll()
                         .anyRequest()
