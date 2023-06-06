@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Sql123.
+    url: jdbc:mysql://127.0.0.1:3306/testdb
+    username: root
+  security:
+    user:
+      name: admin
+      password: admin
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
